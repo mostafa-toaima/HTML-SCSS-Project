@@ -1,0 +1,32 @@
+// NavBar
+nav {
+    background-color: #fff;
+
+    .navbar-brand {
+        height: 40px;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-weight: 400;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $highlight-color;
+                }
+            }
+        }
+    }
+
+    .sign {
+        gap: 16px;
+
+        span {
+            color: $text-color;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}

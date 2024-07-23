@@ -1,0 +1,133 @@
+@import 'variables';
+@import 'common-styles';
+@import 'navbar.scss';
+@import 'plans.scss';
+@import 'illustration.scss';
+
+
+// Customers
+.Customers {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: $background-color !important;
+
+    .header-container {
+        background-color: $background-color !important;
+    }
+
+    .row {
+        .col-md-12 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .card {
+        border: 1px solid $border-color;
+        min-width: 240px;
+        min-height: 240px;
+
+        &.active {
+            border: 1px solid $primary-color;
+            background-color: #ffffff !important;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .item {
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .bullets {
+        padding-top: 50px;
+
+        .bullet {
+            width: 15px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $border-color;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $primary-color;
+                width: 25px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.container {
+    position: relative;
+
+    .subscribe {
+        background-color: #ffffff;
+        position: absolute;
+        top: -81px;
+        width: 100%;
+        box-shadow: 0 31px 43px rgba(2, 0, 4, .2);
+
+        .col-md-6 {
+            h2 {
+                font-weight: 500;
+                font-size: 40px;
+                color: $text-color;
+            }
+
+            p {
+                font-size: 14px;
+                color: $subtext-color;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    @media (max-width: 600px) {
+        padding-top: 300px;
+    }
+
+    background-color: $light-grey-color;
+
+    .row {
+        .col-md-6 {
+            .logo {
+                width: 100px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $subtext-color;
+                line-height: 30px;
+            }
+        }
+
+        .icon {
+            width: 50px;
+        }
+
+        span {
+            font-size: 14px;
+            color: $inactive-color;
+        }
+
+        ul {
+            li:not(:first-child) {
+                font-size: 14px;
+                color: $inactive-color;
+                line-height: 40px;
+            }
+        }
+    }
+}
